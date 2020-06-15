@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		
+		<title>UP</title>
+		
+		<!-- Core CSS -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/css/main.css" rel="stylesheet">
+		
+		<!-- AddOn/Plugin CSS -->
+		<link href="assets/css/green.css" rel="stylesheet" title="Color">
+		<link href="assets/css/owl.carousel.css" rel="stylesheet">
+		<link href="assets/css/owl.transitions.css" rel="stylesheet">
+		<link href="assets/css/animate.min.css" rel="stylesheet">
+		<link href="assets/css/aos.css" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<link href="assets/css/custom.css" rel="stylesheet">
+		
+		<!-- Fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Lato:400,900,300,700" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic" rel="stylesheet">
+		
+		<!-- Icons/Glyphs -->
+		<link href="assets/fonts/fontello.css" rel="stylesheet">
+		
+		<!-- Favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        
+        <style> 
+            ::placeholder { /* Firefox, Chrome, Opera */ 
+                color: blue; 
+            } 
+              
+            :-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+                color: red; 
+            } 
+              
+            ::-ms-input-placeholder { /* Microsoft Edge */ 
+                color: orange; 
+            } 
+            </style>
+	</head>
+	
+	<body>
+		
+		<!-- ============================================================= HEADER ============================================================= -->
+		
+		<header>
+			<div class="navbar">
+				
+				<div class="navbar-header">
+					
+				</div><!-- /.navbar-header -->
+				
+				<div class="yamm">
+					<div class="navbar-collapse collapse">
+						<div class="container">
+							
+							<!-- ============================================================= LOGO ============================================================= -->
+							
+							<a class="navbar-brand" href="index.html"><img src="assets/images/logo.svg" class="logo" alt=""></a>
+							
+							<!-- ============================================================= LOGO : END ============================================================= -->
+							
+							
+							<!-- ============================================================= MAIN NAVIGATION ============================================================= -->
+							
+							<ul class="nav navbar-nav">
+								
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Home</a>
+									
+									
+								</li><!-- /.dropdown -->
+								
+								<li class="dropdown">
+									<a href="newWallet.html" class="dropdown-toggle" data-toggle="dropdown">New Wallet</a>
+									
+									
+								</li><!-- /.dropdown -->
+								
+								<li class="dropdown">
+									<a href="restoreWallet.html" class="dropdown-toggle" data-toggle="dropdown">Restore Wallet</a>
+									
+									
+								</li><!-- /.dropdown -->
+								
+								<li class="dropdown">
+									<a href="restoreJson.html" class="dropdown-toggle" data-toggle="dropdown">Restore from JSON</a>
+									
+									
+								</li><!-- /.dropdown -->
+								
+								<li class="dropdown">
+									<a href="registration.html" class="dropdown-toggle" data-toggle="dropdown">registration</a>
+									
+								
+								</li><!-- /.dropdown -->
+								
+								
+								
+							
+								
+							</ul><!-- /.nav -->
+							
+							<!-- ============================================================= MAIN NAVIGATION : END ============================================================= -->
+							
+						</div><!-- /.container -->
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.yamm -->
+			</div><!-- /.navbar -->
+		</header>
+		
+		
+		
+		
+		<!-- ============================================================= MAIN ============================================================= -->
+		
+		<main>
+
+            <section id="product" class="light-bg">
+				<div class="container inner" style = "padding-top: 25px">
+                    
+                    <div class="row ">
+						<div class="col-lg-8 col-md-9 col-sm-10 mx-auto text-center">
+							<header>    
+                                
+								<h1 class="fadeInDown-3">New user registration</h1>
+								<!-- <p>Doloreiur quia commolu dolupta oreprerum tibusam.</p> -->
+							</header>
+						</div><!-- /.col -->
+                    </div><!-- /.row -->
+                    <br>
+
+                    <form   (ngSubmit)="salva()" name="dform">
+
+                        <div class="form-row">
+            
+                            <!-- Nome -->
+                            <div class="col  mb-1">
+                                
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nomeo"   id="nome" class="form-control" placeholder="Inserisci nome" style="background-color: #ffffff">
+                            </div>
+            
+                            <!-- Cognome -->
+                            <div class="col mb-1">
+                                
+                                <label for="cognome">Cognome</label>
+                                <input type="text" name="cognomeo"   id="cognome" class="form-control" placeholder="Inserisci cognome" style="background-color: #ffffff">
+                            </div>
+                        </div>
+            
+            
+                        <!-- codice fiscale -->
+                        <div class="form-row">
+                            <div class="col col-md-6  mb-1 ">
+                                
+                                <label for="codicefiscale">Codice Fiscale</label>
+                                <input type="text" name="codicefiscaleo"   id="codicefiscale" class="form-control" placeholder="Inserisci codice fiscale" style="background-color: #ffffff">
+                            </div>
+                            
+                        </div>
+            
+                        <!-- Indirizzo -->
+            
+                        <div class="form-row">
+                            <div class="col col-md-4">
+                                <label for="via">Via</label>
+                              <input type="text" name="via" class="form-control" placeholder="Via" id="via" style="background-color: #ffffff">
+                            </div>
+                            <div class="col col-md-3">
+                                <label for="citta">Citta</label>
+                              <input type="text" class="form-control" name="citta" placeholder="Città" id = "citta" style="background-color: #ffffff">
+                            </div>
+                            
+                            <div class="col col-md-2 mb-1">
+                                <label for="cap">CAP</label>
+                              <input type="text" class="form-control" name="cap"  placeholder="Zip"  id = "cap" style="background-color: #ffffff">
+                            </div>
+                          </div>
+                        
+                          <div class="form-row">
+                            
+                            <div class="col-auto my-2">
+                                <label class="mr-sm-2" for="inlineFormCustomSelect">Sesso</label>
+                              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="sesso" style="color: #b0b9c1;">
+                               
+                                <option value="M">M</option>
+                                <option value="F">F</option>
+                               
+                              </select>
+                            </div>
+            
+                            <div class="col-auto my-2">
+                                <label class="mr-sm-2" for="inlineFormCustomSelect">Cittadinanza</label>
+                              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="sesso" style="color: #b0b9c1;">
+                                
+                                <option name="sesso2" value="M">Italiana</option>
+                                <option name="sesso2" value="F">Straniera</option>
+                               
+                              </select>
+                            </div>
+            
+            
+                            
+                          </div>
+            
+                          <div class="form-row">
+            
+                            <div class="col col-md-2 ">
+                                <label class="mr-sm-2" for="inlineFormCustomSelect">Documento</label>
+                              <select class="custom-select" id="inlineFormCustomSelect" name="tipodocumento" style="color: #b0b9c1;" >
+                                <option name="sesso323" selected>Patente di guida</option>
+                                <option name="sessowdd" value="M">Carta di identità</option>
+                                <option name="sessowdd" value="F">Passaporto</option>
+                               
+                              </select>
+                            </div>
+            
+                            <div class="col col-md-4 ">
+                                <label for="exampleFormControlInput1">Numero</label>
+                              <input type="text" class="form-control" name="documento" placeholder="Numero documento" style="background-color: #ffffff" >
+                            </div>
+            
+            
+                          </div>
+                          
+                          <div class="form-row ">
+                            <div class="col col-md-4 my-2  ">
+                              <button name="btmSubmit" type="submit" id="btnAdd" class="btn btn-primary form-buttons" >
+                                <i class="fa fa-floppy-o" aria-hidden="true"></i>  Salva
+                            </button> &nbsp;
+                            <button name="btnCancel"  id="btnAbort" class="btn btn-warning form-buttons"  >
+                              <i class="fa fa-sign-out" aria-hidden="true"></i>  Annulla
+                            </button>
+                                
+                            </div>
+                            
+                          </div>
+            
+                          
+                          
+            
+            
+                      </form>
+
+                    
+                
+                    
+					
+					
+					
+					
+					
+					
+				
+				</div><!-- /.container -->
+			</section>
+			
+			
+			
+			
+			
+			
+			
+			
+		
+			
+			
+			
+			
+			
+			
+			
+		</main>
+		
+		<!-- ============================================================= MAIN : END ============================================================= -->
+		
+		
+		<!-- ============================================================= FOOTER ============================================================= -->
+		
+		<footer class="dark-bg">
+			<div class="container inner">
+				<div class="row">
+					
+					<div class="col-lg-3 col-md-6 inner">
+						<h4>Who we are</h4>
+						<a href="index.html"><img class="logo img-intext" src="assets/images/logo-white.svg" alt=""></a>
+						<p>Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+						<a href="about.html" class="txt-btn">More about us</a>
+					</div><!-- /.col -->
+					
+					<div class="col-lg-3 col-md-6 inner">
+						<h4>Latest works</h4>
+						
+						<div class="row thumbs gap-xs">
+														
+							<div class="col-6 thumb">
+								<figure class="icon-overlay icn-link">
+									<a href="portfolio-post.html"><img src="assets/images/art/work02.jpg" alt=""></a>
+								</figure>
+							</div><!-- /.thumb -->
+							
+							<div class="col-6 thumb">
+								<figure class="icon-overlay icn-link">
+									<a href="portfolio-post.html"><img src="assets/images/art/work03.jpg" alt=""></a>
+								</figure>
+							</div><!-- /.thumb -->
+							
+							<div class="col-6 thumb">
+								<figure class="icon-overlay icn-link">
+									<a href="portfolio-post.html"><img src="assets/images/art/work07.jpg" alt=""></a>
+								</figure>
+							</div><!-- /.thumb -->
+							
+							<div class="col-6 thumb">
+								<figure class="icon-overlay icn-link">
+									<a href="portfolio-post.html"><img src="assets/images/art/work01.jpg" alt=""></a>
+								</figure>
+							</div><!-- /.thumb -->
+							
+						</div><!-- /.row -->
+					</div><!-- /.col -->
+					
+					
+					<div class="col-lg-3 col-md-6 inner">
+						<h4>Get In Touch</h4>
+						<p>Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.</p>
+						<ul class="contacts">
+							<li><i class="icon-location contact"></i> 84 Street, City, State 24813</li>
+							<li><i class="icon-mobile contact"></i> +00 (123) 456 78 90</li>
+							<li><a href="#"><i class="icon-mail-1 contact"></i> info@reen.com</a></li>
+						</ul><!-- /.contacts -->
+					</div><!-- /.col -->
+					
+					<div class="col-lg-3 col-md-6 inner">
+						<h4>Free updates</h4>
+						<p>Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.</p>
+						<form id="newsletter" class="form-inline newsletter" role="form">
+							<label class="sr-only" for="exampleInputEmail">Email address</label>
+							<input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter your email address">
+							<button type="submit" class="btn btn-submit">Subscribe</button>
+						</form>
+					</div><!-- /.col -->
+					
+				</div><!-- /.row --> 
+			</div><!-- .container -->
+		  
+			<div class="footer-bottom">
+				<div class="container inner clearfix">
+					<p class="float-left">© 2019 REEN. All rights reserved.</p>
+					<ul class="footer-menu float-right">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul><!-- .footer-menu -->
+				</div><!-- .container -->
+			</div><!-- .footer-bottom -->
+		</footer>
+		
+		<!-- ============================================================= FOOTER : END ============================================================= -->
+		
+		<!-- JavaScripts placed at the end of the document so the pages load faster -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.easing.1.3.min.js"></script>
+		<script src="assets/js/jquery.form.js"></script>
+		<script src="assets/js/jquery.validate.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/affix.js"></script>
+		<script src="assets/js/aos.js"></script>
+		<script src="assets/js/owl.carousel.min.js"></script>
+		<script src="assets/js/jquery.isotope.min.js"></script>
+		<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+		<script src="assets/js/jquery.easytabs.min.js"></script>
+		<script src="assets/js/viewport-units-buggyfill.js"></script>
+		<script src="assets/js/selected-scroll.js"></script>
+		<script src="assets/js/scripts.js"></script>
+		<script src="assets/js/custom.js"></script>
+		
+		<!-- For demo purposes – can be removed on production -->
+		<link href="assets/css/green.css" rel="alternate stylesheet" title="Green color">
+		<link href="assets/css/blue.css" rel="alternate stylesheet" title="Blue color">
+		<link href="assets/css/red.css" rel="alternate stylesheet" title="Red color">
+		<link href="assets/css/pink.css" rel="alternate stylesheet" title="Pink color">
+		<link href="assets/css/purple.css" rel="alternate stylesheet" title="Purple color">
+		<link href="assets/css/orange.css" rel="alternate stylesheet" title="Orange color">
+		<link href="assets/css/navy.css" rel="alternate stylesheet" title="Navy color">
+		<link href="assets/css/gray.css" rel="alternate stylesheet" title="Gray color">
+		
+		<script src="switchstylesheet/switchstylesheet.js"></script>
+		
+		<script>
+			$(document).ready(function(){ 
+				$(".changecolor").switchstylesheet( { seperator:"color"} );
+			});
+		</script>
+		<!-- For demo purposes – can be removed on production : End -->
+	</body>
+</html>
